@@ -10,12 +10,6 @@ body {
 .flex-container {
     display: flex;
     align-items: center;
-    justify-content:space-around;
-}
-
-.internal-flex {
-    display: flex;
-    align-items: center;
 }
 
 nav {
@@ -24,6 +18,7 @@ nav {
 }
 
 nav img {
+    margin: 0 30px;
     width: 100px;
     padding: 10px 0;
     cursor: pointer;
@@ -35,10 +30,14 @@ nav h1 {
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
+    -ms-background :  #000080;
+    -ms-color: white;    
 }
 
 ul {
     list-style: none;
+    margin-left: auto;
+    margin-right: 50px;
 }
 
 li {
@@ -114,7 +113,6 @@ p {
     /*Nav*/
     .flex-container {
         flex-wrap: wrap;
-        justify-content: space-evenly;
     } 
 
     .flex-container-ul {
@@ -122,7 +120,6 @@ p {
         width: 100%;
         flex-direction: column;
         position: relative;
-        /* left: -100%; */
         animation: anime 0.5s;
     }
 
@@ -131,14 +128,18 @@ p {
     }
 
     nav h1 {
-        width: 50%;
-        text-align: center;
+        width: 40%;
+        text-align: left;
+        margin-right: auto;
     }
 
     nav label {
-        width: 10%;
+        /* width: 20%; */
         color: white;
         transition: color 0.3s;
+        text-align: center;
+        margin-right: 30px;
+        font-size: 35px;
     }
 
     nav label:hover {
@@ -152,11 +153,6 @@ p {
     li {
         margin: 0;
         margin-bottom: 30px;
-    }
-
-    .internal-flex {
-        width: 100%;
-        justify-content:start;
     }
 
     .checkbox {
@@ -173,4 +169,18 @@ p {
         100%{top: 0}
     }
 
+}
+
+@media (max-width:500px){
+    nav img {
+        width: 70px;
+        margin: 0 10px;
+    }
+    nav h1 {
+        font-size: 20px;
+    }
+    nav label {
+        margin-right: 10px;
+        font-size: 18px;
+    }
 }
