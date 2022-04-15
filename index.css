@@ -26,12 +26,21 @@ nav img {
 
 nav h1 {
     font-weight: 400;
-    background: linear-gradient(to right, #ff9933,#fff, #138808);
-    background-clip: text;
+    -o-background: linear-gradient(to right, #ff9933,#fff, #138808);
+    -moz-background: linear-gradient(to right, #ff9933,#fff, #138808);
+    -webkit-background: linear-gradient(to right, #ff9933,#fff, #138808);
+    -ms-background: #000080;
+    background: #000080;
     -webkit-background-clip: text;
-    color: transparent;
-    -ms-background :  #000080;
-    -ms-color: white;    
+    -moz-background-clip: text;
+    -o-background-clip: text;
+    -ms-background-clip: none;
+    background-clip: text;
+    -webkit-color: transparent;
+    -moz-color: transparent;
+    -o-color: transparent;
+    -ms-color: #ff9933;
+    color: #ff9933;
 }
 
 ul {
@@ -85,7 +94,7 @@ p {
 .top {
     text-align: center;
     background: linear-gradient(to right, #ff9933, #ff8000);
-    padding: 300px 0;
+    padding: 100px 0 300px;
     font-size: 30px;
     color: #000080;
 }
