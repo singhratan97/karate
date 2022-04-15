@@ -26,25 +26,20 @@ nav img {
 
 nav h1 {
     font-weight: 400;
-    -o-background: linear-gradient(to right, #ff9933,#fff, #138808);
-    -moz-background: linear-gradient(to right, #ff9933,#fff, #138808);
-    -webkit-background: linear-gradient(to right, #ff9933,#fff, #138808);
-    -ms-background: #000080;
+    
     background: #000080;
-    
-    
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -o-background-clip: text;
-    -ms-background-clip: border-box;
     background-clip: border-box;
-    
-    
-    -webkit-color: transparent;
-    -moz-color: transparent;
-    -o-color: transparent;
-    -ms-color: #ff9933;
     color: #ff9933;
+    
+    
+}
+
+@supports (background-clip: text) and (color: transparent;) {
+    nav h1 {
+        background: linear-gradient(to right, #ff9933,#fff, #138808);
+        background-clip: text;
+        color: transparent;
+    }
     
 }
 
