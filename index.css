@@ -26,7 +26,6 @@ nav img {
 
 nav h1 {
     font-weight: 400;
-    
     background: #000080;
     background-clip: border-box;
     color: #ff9933;
@@ -34,7 +33,7 @@ nav h1 {
     
 }
 
-@supports (background-clip: text) and (color: transparent;) {
+@supports (background-clip: text) and (color: transparent) {
     nav h1 {
         background: linear-gradient(to right, #ff9933,#fff, #138808);
         background-clip: text;
