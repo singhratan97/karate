@@ -16,5 +16,5 @@ let interval = setInterval(()=>{
         clearInterval(interval)
     }
     console.log("final")
-},3)
+},10)
 
