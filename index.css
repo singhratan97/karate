@@ -111,9 +111,29 @@ p {
     cursor: pointer;
 }
 
-
-
 @media(max-width:1300px) {
+    nav img {
+        width: 80px;
+    }
+
+    nav h1 {
+        font-size: 26px;
+        width: 30%;
+    }
+
+    li {
+        margin-left: 20px;
+    }
+
+    ul {
+        padding: 0;
+        margin-right: 25px;
+    }
+}
+
+
+
+@media(max-width:1040px) {
     /*Nav*/
     .flex-container {
         flex-wrap: wrap;
@@ -131,7 +151,6 @@ p {
 
     nav label {
         color: white;
-        transition: color 0.3s;
         text-align: center;
         margin-right: 30px;
         font-size: 35px;
@@ -181,13 +200,13 @@ p {
 @media (max-width:500px){
     nav img {
         width: 70px;
-        margin: 0 10px;
+        margin: 0 20px;
     }
     nav h1 {
         font-size: 20px;
     }
     nav label {
-        margin-right: 10px;
-        font-size: 18px;
+        margin-right: 25px;
+        font-size: 24px;
     }
 }

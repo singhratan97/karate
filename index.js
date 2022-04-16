@@ -4,9 +4,11 @@ const check = document.getElementById('check')
 check.addEventListener('click', function(){
     if(check.checked) {
         document.body.classList.add('ladoo')
+        document.getElementsByClassName('icon')[0].classList.add('fa-times')
     }
     else {
         document.body.classList.remove('ladoo')
+        document.getElementsByClassName('icon')[0].classList.remove('fa-times')
     }
 })
 
