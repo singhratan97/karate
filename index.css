@@ -71,6 +71,32 @@ a:focus {
     background: #fff;
 }
 
+.dropdown-li {
+    position: relative;
+}
+
+
+.dropdown ul {
+    display: none;
+}
+
+.dropdown:focus ul,
+.dropdown:hover ul,
+.dropdown:active ul
+ {
+    display: block;
+    background: #000080;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+.dropdown ul li{
+    margin: 0;
+    padding: 20px;
+}
 /*
     Body
 */
@@ -124,6 +150,7 @@ p {
     li {
         margin-left: 20px;
     }
+
 
     ul {
         padding: 0;

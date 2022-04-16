@@ -2,14 +2,11 @@ const span = document.querySelector("span")
 const check = document.getElementById('check')
 
 check.addEventListener('click', function(){
-    if(check.checked) {
-        document.body.classList.add('ladoo')
-        document.getElementsByClassName('icon')[0].classList.add('fa-times')
-    }
-    else {
-        document.body.classList.remove('ladoo')
-        document.getElementsByClassName('icon')[0].classList.remove('fa-times')
-    }
+    
+        document.body.classList.toggle('ladoo')
+        document.getElementsByClassName('icon')[0].classList.toggle('fa-times')
+    
+    
 })
 
 let value = 0
@@ -28,5 +25,5 @@ let interval = setInterval(()=>{
         clearInterval(interval)
     }
     // console.log("final")
-},10)
-
+},15)
+  
