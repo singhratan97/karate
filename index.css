@@ -15,12 +15,12 @@ body {
 nav {
     background: #000080;
     color: #fff;
+    height: 120px;
 }
 
 nav img {
     margin: 0 30px;
     width: 100px;
-    padding: 10px 0;
     cursor: pointer;
 }
 
@@ -119,14 +119,6 @@ p {
         flex-wrap: wrap;
     } 
 
-    .flex-container-ul {
-        display: none;
-        width: 100%;
-        flex-direction: column;
-        position: relative;
-        animation: anime 0.5s;
-    }
-
     nav img {
         width: 100px;
     }
@@ -138,7 +130,6 @@ p {
     }
 
     nav label {
-        /* width: 20%; */
         color: white;
         transition: color 0.3s;
         text-align: center;
@@ -155,23 +146,35 @@ p {
     }
 
     li {
-        margin: 0;
-        margin-bottom: 30px;
+        margin: 0; 
     }
 
     .checkbox {
         display: block;
     }
 
-    #check:checked ~ ul {
-        display: flex;
-        left: 0;
+    .flex-container-ul {
+        width: 100%;
+        height: calc(100vh - 120px);
+        flex-direction: column;
+        background: #000080;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        top: 120px;
+        transition: left 0.5s;
+        left: -100%;
+        justify-content: space-around;
     }
 
-    @keyframes anime {
-        0% {top: -1000px;}
-        100%{top: 0}
+    .ladoo {
+        overflow: hidden;
     }
+
+    #check:checked ~ ul {
+        left:0;
+    }
+
 
 }
 
