@@ -357,3 +357,64 @@ About federation
     object-fit: cover;
     display: block;
 }
+
+/*About Committee */
+
+.c_main_wrapper {
+    background-color: #ff9933;
+}
+
+.c_main {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+}
+
+.c_main_section {
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 30px 0;
+    border-bottom: 1px dotted black;
+    border-radius: 5px;
+}
+
+.c_main_section .about {
+    margin-left: 10px;
+    max-width: 600px;
+}
+
+.c_main_section .name, 
+.c_main_section .designation {
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.c_main_section .name {
+    margin-top: 10px;
+} 
+
+
+.c_main img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+
+@media (max-width: 900px) {
+
+    /* .c_main {
+        width: 70%;
+    } */
+    .c_main_section {
+        flex-direction: column;
+    }
+
+    .c_main_section .about {
+        text-align: center;
+        padding: 0 20px;
+    }
+}
