@@ -226,7 +226,6 @@ p {
         left:0;
     }
 
-
 }
 
 @media (max-width:500px){
@@ -284,6 +283,7 @@ About federation
 
 .af_main ol li {
     padding-bottom: 10px;
+    list-style-position: inside;
 }
 
 .af_main_section {
@@ -316,7 +316,6 @@ About federation
     }
     .af_main ol li {
         padding-bottom: 15px;
-        list-style-position: inside;
     }
 }
 
@@ -326,4 +325,35 @@ About federation
         width: 80%;
     }
 
+}
+
+/*gallery*/
+
+.g_img_section {
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.g_img {
+    border-radius: 5px;
+    width: 250px;
+    margin: 10px;
+    box-shadow: 0 0 2px 2px black;
+    transform: scale(0.95);
+    transition: transform 0.3s;
+}
+
+.g_img:hover {
+    transform: scale(1);
+}
+
+.g_img img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
 }
