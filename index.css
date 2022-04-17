@@ -13,9 +13,13 @@ body {
 }
 
 nav {
+    position: fixed;
+    width: 100%;
+    top: 0px;
     background: #000080;
     color: #fff;
     height: 120px;
+    z-index: 1;
 }
 
 nav img {
@@ -85,12 +89,12 @@ a:focus {
 .dropdown:active ul
  {
     display: block;
-    background: #000080;
+    background: rgba(0,0,71,0.7);
     position: absolute;
     margin: 0;
     padding: 0;
-    left: 0;
-    border-radius: 5px;
+    left: -35px;
+    border-radius: 15px;
 }
 
 .dropdown ul li{
@@ -113,6 +117,7 @@ p {
 }
 
 .top {
+    margin-top: 120px;
     text-align: center;
     background: linear-gradient(to right, #ff9933, #ff8000);
     padding: 100px 0 300px;
@@ -236,4 +241,88 @@ p {
         margin-right: 25px;
         font-size: 24px;
     }
+}
+
+/*
+About federation
+*/
+
+.af_wrapper {
+    background: #ff9933;
+    margin-top: 120px;
+}
+
+.af_wrapper h1 {
+    text-shadow: none;
+}
+
+.af_wrapper > p {
+    padding-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 800;
+    font-size: 25px;
+    color: #000080;
+}
+
+.af_main {
+    max-width: 1000px;
+    margin: 0 auto;
+    color: #000080;
+    padding: 10px;
+}
+
+.af_main > h1 {
+    padding-top: 30px;
+}
+
+.af_main ol{
+    padding: 0;
+    letter-spacing: 2.5px;
+    margin-bottom: 0;
+}
+
+.af_main ol li {
+    padding-bottom: 10px;
+}
+
+.af_main_section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+
+.af_main_section div {
+    width: 30%;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #4a4ac0 inset;
+    border-radius: 5px;
+    transform: scale(0.9);
+    transition: transform 0.3s;
+}
+
+.af_main_section div:hover {
+    transform: scale(1);
+}
+
+.af_main_section div p{
+    font-weight: 400;
+}
+
+@media (max-width: 900px) {
+    .af_main_section div {
+        width: 40%;
+    }
+    .af_main ol li {
+        padding-bottom: 15px;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .af_main_section div {
+        width: 80%;
+    }
+
 }
