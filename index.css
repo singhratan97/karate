@@ -316,6 +316,7 @@ About federation
     }
     .af_main ol li {
         padding-bottom: 15px;
+        list-style-position: inside;
     }
 }
 
