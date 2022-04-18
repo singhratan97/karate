@@ -79,22 +79,39 @@ a:focus {
     position: relative;
 }
 
-
-.dropdown ul {
-    display: none;
+.active {
+    border-bottom: 1px solid #ff9933;
 }
 
-.dropdown:focus ul,
-.dropdown:hover ul,
-.dropdown:active ul
- {
-    display: block;
+.dropdown > a {
+    cursor: pointer;
+}
+
+
+.dropdown ul {
+    /* display: none; */
+    opacity: 0;
+    pointer-events: none;
     background: rgba(0,0,71,0.7);
     position: absolute;
     margin: 0;
     padding: 0;
     left: -35px;
     border-radius: 15px;
+    transform: translateY(10px);
+    transition: transform 0.2s;
+ /* padding-top: 10px;  */
+}
+
+.dropdown:focus ul,
+.dropdown:hover ul,
+.dropdown:active ul
+ {
+    /* display: block; */
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+    
 }
 
 .dropdown ul li{
