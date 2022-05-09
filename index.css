@@ -303,7 +303,7 @@ p {
 
     .flex-container-ul {
         width: 100%;
-        height: calc(100vh - 120px);
+        min-height: calc(100vh - 120px);
         flex-direction: column;
         background: #000080;
         padding: 0;
