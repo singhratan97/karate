@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
+    <title>Events</title>
+</head>
+<body>
+    <header class="wrapper">
+        <nav class="flex-container">
+            <img src="logo.png" alt="logo">
+            <h1>The Karate Federation of India</h1>
+
+            <input type="checkbox" id="check" >
+            <label for="check" class="checkbox"><i class="icon fas fa-bars"></i></label>
+            <!-- <i class="fas fa-times"></i> -->
+
+            <ul class="flex-container flex-container-ul">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li class="dropdown-li">
+                    <div class="dropdown">
+                        <a>About <i class="fas fa-caret-down"></i></a>
+                        <ul>
+                            <li><a href="about_federation.html">Federation</a></li>
+                            <li><a href="about_committee.html">Committee</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#">Chapters</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="events.html" class="active">Events</a></li>
+                <li><a href="#">Join us</a></li>
+                <li><a href="contact_us.html" class="contact-us">Contact us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="events_container">
+        <p class="event_name">TKFI State Level Open Karate Championship - 2022</p>
+        <div class="event_content">
+            <img  src="event1.jpeg" alt="">
+        </div>
+    </div>
+    <script>
+        document.getElementsByClassName('event_name')[0].addEventListener('click' ,function() {
+        document.getElementsByClassName('event_content')[0].classList.toggle('event_display')
+        console.log('event_display')
+})
+    </script>
+</body>
+</html>

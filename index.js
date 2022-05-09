@@ -8,3 +8,37 @@ check.addEventListener('click', function(){
     
     
 })
+
+const imgs = document.getElementsByClassName("img-carousel")
+let i = 0;
+document.getElementById("right-carousel").addEventListener("click", rightCarousel)
+document.getElementById("left-carousel").addEventListener("click", leftCarousel)
+
+function rightCarousel() {
+        if(i === 2) {
+                imgs[i].classList.add("img-carousel-hide");
+                i = 0;
+                imgs[i].classList.remove("img-carousel-hide")
+        }
+        else {
+                imgs[i].classList.add("img-carousel-hide");
+                i++;
+                imgs[i].classList.remove("img-carousel-hide")
+        }
+}
+
+function leftCarousel() {
+        if(i === 0) {
+                imgs[i].classList.add("img-carousel-hide");
+                i = 2;
+                imgs[i].classList.remove("img-carousel-hide")
+        }
+        else {
+                imgs[i].classList.add("img-carousel-hide");
+                i--;
+                imgs[i].classList.remove("img-carousel-hide")
+        }
+}
+
+setInterval(rightCarousel, 4000)
+
