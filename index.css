@@ -354,6 +354,18 @@ p {
         margin-right: 25px;
         font-size: 24px;
     }
+
+    .top h1, .middle h1{
+        font-size: 32px;
+    }
+
+    .top p, .middle p{
+        font-size:20px;
+    }
+
+    .middle {
+        padding: 150px 0;
+    }
 }
 
 /*
@@ -688,7 +700,6 @@ a .fa-envelope:active {
 
 .event_content {
     max-width: 700px;
-    text-align: center;
     display: none;
 }
 
@@ -701,12 +712,15 @@ a .fa-envelope:active {
     display: block;
 }
 
-.event_name {
+.event_name a{
     padding-top:10px;
-    text-align: center;
     font-weight: 400;
     animation: color-change 1s infinite;
     cursor: pointer;
+}
+
+.events_container ul {
+    list-style-type: disc;
 }
 
 @keyframes color-change {
