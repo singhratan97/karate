@@ -31,7 +31,7 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="#">Chapters</a></li>
+                <li><a href="members.html">Members</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="events.html">Events</a></li>
                 <li><a href="#">Join us</a></li>
@@ -41,8 +41,7 @@
     </header>
     <div class="wrapper-carousel">
         <div id="container-carousel">
-            <div class="img-carousel img-carousel-visible"><img src="carousel1.jpeg"></div>
-            <div class="img-carousel img-carousel-visible img-carousel-hide"><img src="carousel2.jpeg"></div>
+            <div class="img-carousel img-carousel-visible"><img src="carousel2.jpeg"></div>
             <div class="img-carousel img-carousel-visible img-carousel-hide"><img src="carousel3.jpeg"></div>
         </div>
         <div class="btn-div-carousel">
@@ -51,33 +50,53 @@
         </div>
     </div>
     <div class="top">
-        <h1>The Karate Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, qui.</p>
-        <p><span>100</span>+ students</p>
+        <h1>The Karate Federation of India</h1>
+        <p>Affiliated to <strong class="wukf">World Union of Karate Do Federations (WUKF)</strong></p>
+        <p class="text-bold">More than <span>100000</span>+ students</p>
+        <p class="text-bold">More than <span class="state">10</span>+ State Chapters</p>
     </div>  
     <div class="middle">
-        <h1>The Karate Page</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, qui.</p>
+        <h1>Our motto is stronger people build stronger nation</h1>
+        <p>Special focus on training the underprivileged so that learning martial arts is not their distant dream</p>
     </div>
     <script src="index.js">
     </script>
     <script>
-    let value = 0
-    let count = 100
+        const span = document.querySelector("span")
+        let value = 0
+        let count = 100000
 
-    let interval = setInterval(()=>{
-        if(value < count) {
-            value++
-            span.textContent = value
-            // console.log(value)
-        }
-        else {
-            span.textContent = value
-            // console.log("100 done")
-            clearInterval(interval)
-        }
-        // console.log("final")
-    },15)
+        let interval = setInterval(()=>{
+            if(value < count) {
+                value = value + 500
+                span.textContent = value
+                // console.log(value)
+            }
+            else {
+                span.textContent = value
+                // console.log("100 done")
+                clearInterval(interval)
+            }
+            // console.log("final")
+        },1)
+
+        const span2 = document.getElementsByClassName('state')[0]
+
+        let value2 = 0
+        let count2 = 10
+        let interval2 = setInterval(()=>{
+            if(value2 < count2) {
+                value2 = value2 + 1
+                span2.textContent = value2
+                // console.log(value)
+            }
+            else {
+                span2.textContent = value2
+                // console.log("100 done")
+                clearInterval(interval2)
+            }
+            // console.log("final")
+        },90)
   
     </script>
 </body>

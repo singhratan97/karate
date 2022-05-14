@@ -52,14 +52,14 @@ li {
     margin-left: 40px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: #fff;
     transition: color 0.2s;
 }
 
-a:hover,
-a:focus {
+nav a:hover,
+nav a:focus {
     color: #138808;
 }
 
@@ -217,9 +217,18 @@ p {
     /* margin-top: 120px; */
     text-align: center;
     background: linear-gradient(to right, #ff9933, #ff8000);
-    padding: 100px 0 300px;
+    padding: 100px 0 100px;
     font-size: 30px;
     color: #000080;
+}
+
+.top .wukf {
+    font-weight : 400;
+}
+
+.text-bold {
+    font-weight: 400;
+    margin: 0;
 }
 
 .middle {
@@ -229,6 +238,14 @@ p {
     color: #fff;
     font-size: 30px;
 }
+
+.middle h1, .middle p {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
 
 #check {
     display: none;
@@ -262,7 +279,7 @@ p {
 
 
 
-@media(max-width:1040px) {
+@media(max-width:1080px) {
     /*Nav*/
     .flex-container {
         flex-wrap: wrap;
@@ -303,7 +320,7 @@ p {
 
     .flex-container-ul {
         width: 100%;
-        min-height: calc(100vh - 120px);
+        height: calc(100vh - 120px);
         flex-direction: column;
         background: #000080;
         padding: 0;
@@ -455,6 +472,46 @@ About federation
     display: block;
 }
 
+/*Members*/
+
+.m_wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    margin-top: 140px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.img_card {
+    width: 300px;
+    text-align: center;
+}
+
+.img_card img{
+    margin: 0 auto;
+    height: 290px;
+    width: 250px;
+    object-fit: cover;
+    object-position: center 5%;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.img_card p {
+    margin-bottom: 0;
+}
+
+.img_card p:nth-child(3){
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.img_card .name {
+    font-weight: 400;
+}
+
 /*About Committee */
 
 .c_main_wrapper {
@@ -463,6 +520,10 @@ About federation
 
 .c_main_wrapper p {
     font-weight: 400;
+}
+
+.c_main_wrapper .name {
+    font-weight: 800;
 }
 
 .c_main {
@@ -497,6 +558,17 @@ About federation
     margin-top: 10px;
 } 
 
+.c_main_section span {
+    font-size: 10px;
+}
+
+.c_main_section img {
+    margin: 0 auto;
+}
+
+.c_main_section .about {
+    font-size: 24px;
+}
 
 .c_main img {
     width: 250px;
@@ -529,28 +601,79 @@ Contact us
 .google-map-main {
     background-color: #ff9933;
     color: #000080;
+    margin-top: 120px;
 }
 
 .google-map {
     max-width: 1200px;
+    display: flex;
+    align-items: center;
     margin: 0 auto;
-    padding-top: 150px;
-    text-align: center;
+    min-height: calc(100vh - 120px)
 }
 
 .google-map p iframe{
-    box-shadow: 0 0 50px 0px black;
+    box-shadow: 0 0 50px rgba(0,0,0,0.5);
     border-radius: 5px;
+    margin-right: 40px;
+    width: 500px;
+    height: 400px;
 }
 
-.google-map p + p {
-    font-weight: 400;
-    margin-top: 10px;
-    /* padding-bottom: 100px; */
+.google-map div p {
+    margin-bottom: 0;
 }
 
-.google-map p + p span {
-    font-weight: 800;
+.google-map div p + p {
+    margin-top: 0;
+}
+
+
+.google-map a {
+    font-size: 40px;
+}
+
+.google-map div {
+    order: -1;
+    padding: 10px;
+}
+
+.google-map i {
+    margin-top:30px;
+    margin-right: 15px;
+}
+
+.google-map a{
+    margin: 0;
+}
+
+a {
+    color: white;
+}
+
+a .fa-whatsapp:hover {
+    color: #138808;
+}
+
+a .fa-envelope:hover,
+a .fa-envelope:focus,
+a .fa-envelope:active {
+    color: #8d2e1d;
+}
+
+@media(max-width:800px) {
+    .google-map {
+        flex-direction: column;
+        text-align: center;
+        padding-top: 40px;
+        box-sizing: border-box;
+    }
+
+    .google-map p iframe {
+        margin: 0 auto;
+        width: 300px;
+    }
+
 }
 
 
@@ -600,7 +723,7 @@ Contact us
         margin: 0 auto;
         width: 80%;
     }
-
+}
 
 /* 
 .events_container p {
@@ -644,4 +767,5 @@ Contact us
     .event_content img {
         width: 100%;
     }
-} */
+} 
+*/
