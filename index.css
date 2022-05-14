@@ -35,7 +35,7 @@ nav h1 {
 
 @supports (color: transparent) {
     nav h1 {
-        background: linear-gradient(to right, #ff9933,#fff, #138808);
+        background: linear-gradient(to right, #ff9933,#fff, #1de40b);
         background-clip: text;
         -webkit-background-clip: text;
         color: transparent;
