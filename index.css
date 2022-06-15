@@ -29,6 +29,8 @@ nav img {
 }
 
 nav h1 {
+    font-size: 30px;
+    text-transform: uppercase;
     font-weight: 400;
     color: #ff9933;
 }
@@ -141,8 +143,6 @@ nav a:focus {
 
 }
 
-
-
 .img-carousel img {
     width: 100%;
     height: 100%;
@@ -216,10 +216,10 @@ p {
 .top {
     /* margin-top: 120px; */
     text-align: center;
-    background: linear-gradient(to right, #ff9933, #ff8000);
+    background: linear-gradient(to right, #b85d03, #a55d14);
     padding: 100px 0 100px;
     font-size: 30px;
-    color: #000080;
+    color: #fff;
 }
 
 .top .wukf {
@@ -270,14 +270,11 @@ p {
         margin-left: 20px;
     }
 
-
     ul {
         padding: 0;
         margin-right: 25px;
     }
 }
-
-
 
 @media(max-width:1080px) {
     /*Nav*/
@@ -386,15 +383,16 @@ About federation
     margin-bottom: 50px;
     text-align: center;
     font-weight: 800;
-    font-size: 25px;
-    color: #000080;
+    font-size: 40px;
+    color: black;
 }
 
 .af_main {
     max-width: 1000px;
     margin: 0 auto;
-    color: #000080;
+    color: #000000;
     padding: 10px;
+    font-size: 20px;
 }
 
 .af_main > h1 {
@@ -416,7 +414,8 @@ About federation
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    
+    font-size: 25px;
+    color: black;
 }
 
 .af_main_section div {
@@ -588,6 +587,10 @@ About federation
     object-fit: cover;
     object-position: center 30%;
     display: block;
+}
+
+.c_main .c_main_founder {
+    object-position: center 20%;
 }
 
 @media (max-width: 900px) {
@@ -804,7 +807,15 @@ a .fa-envelope:active {
     font-size:30px;
 }
 
-.join_wrapper p {
+.join_wrapper p, .join_wrapper ol{
     font-weight: 400;
     font-size: 25px;
+}
+
+.join_wrapper ol {
+    letter-spacing: 4px;
+}
+
+.join_wrapper ol li {
+    margin-bottom: 20px;
 }
