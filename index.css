@@ -794,7 +794,7 @@ a .fa-envelope:active {
     color: white;
     min-height: calc(100vh - 120px);
     box-sizing: border-box;
-    padding: 50px;
+    padding: 10px;
 }
 
 .join_wrapper i {
@@ -809,7 +809,12 @@ a .fa-envelope:active {
 
 .join_wrapper p, .join_wrapper ol{
     font-weight: 400;
-    font-size: 25px;
+    font-size: 18px;
+}
+
+.join_wrapper ol, .join_wrapper ul{
+    padding: 0;
+    list-style-position: inside;
 }
 
 .join_wrapper ol {
@@ -819,3 +824,9 @@ a .fa-envelope:active {
 .join_wrapper ol li {
     margin-bottom: 20px;
 }
+
+/* @media (min-width: 768px) {
+    .join_wrapper p, .join_wrapper ol{
+        font-size: 15px;
+    }
+} */
