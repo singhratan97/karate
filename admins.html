@@ -8,12 +8,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Bitter:wght@200;400;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="index.css">
-    <title>Carousel</title>
+    <title>Members</title>
 </head>
 <body>
     <header class="wrapper">
         <nav class="flex-container">
-            <img src="logo.png" alt="logo">
+            <a href="index.html"><img src="logo.png" alt="logo"></a>
             <h1>The Karate Federation of India</h1>
 
             <input type="checkbox" id="check" >
@@ -21,7 +21,7 @@
             <!-- <i class="fas fa-times"></i> -->
 
             <ul class="flex-container flex-container-ul">
-                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html">Home</a></li>
                 <li class="dropdown-li">
                     <div class="dropdown">
                         <a>About <i class="fas fa-caret-down"></i></a>
@@ -31,26 +31,39 @@
                         </ul>
                     </div>
                 </li>
-                <li><a href="admins.html">Admins</a></li>
-                <li><a href="#">Chapters</a></li>
+                <li><a href="admins.html"   class="active">Admins</a></li>
+                <li><a href="members.html">Members</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="#">Events</a></li>
-                <li><a href="#">Join us</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li><a href="joinus.html">Join us</a></li>
                 <li><a href="contact_us.html" class="contact-us">Contact us</a></li>
             </ul>
         </nav>
     </header>
-    <div class="wrapper-carousel">
-        <div id="container-carousel">
-            <div class="img-carousel img-carousel-visible"><img src="carousel1.jpeg"></div>
-            <div class="img-carousel img-carousel-visible img-carousel-hide"><img src="carousel2.jpeg"></div>
-            <div class="img-carousel img-carousel-visible img-carousel-hide"><img src="carousel3.jpeg"></div>
+    <div class="m_wrapper">
+        <div class="img_card">
+            <img src="mem5.jpeg" alt="">
+            <p class="name">Mr.Jagatheesan. S</p>
+            <p>Joint Secretary</p>
         </div>
-        <div class="btn-div-carousel">
-            <button id="left-carousel"><</button>
-            <button id="right-carousel">></button>
+        <div class="img_card">
+            <img src="mem8.jpeg" alt="">
+            <p class="name">Mr. Ezhilarasan. P</p>
+            <p>Secretary - Kancheepuram District</p>
+        </div>
+        <div class="img_card">
+            <img src="mem9.jpeg" alt="">
+            <p class="name">Mr. Sreeganesh. M</p>
+            <p>President - Chennai District</p>
+        </div>
+        <div class="img_card">
+            <img src="mem10.jpeg" alt="">
+            <p class="name">Mr. Sivaramakrishnan. R</p>
+            <p>Treasurer</p>
         </div>
     </div>
-    <script src="index.js"></script>
+
+    <script src="index.js">
+    </script>
 </body>
 </html>
