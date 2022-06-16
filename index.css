@@ -527,6 +527,7 @@ About federation
 
 .c_main_wrapper {
     background-color: #ff9933;
+    min-height: calc(100vh - 120px);
 }
 
 .c_main_wrapper p {
